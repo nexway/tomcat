@@ -169,6 +169,7 @@ action :configure do
         :keystore_type => new_resource.keystore_type,
         :tomcat_auth => new_resource.tomcat_auth,
         :config_dir => new_resource.config_dir,
+        :scheme => new_resource.scheme
       })
     owner 'root'
     group 'root'

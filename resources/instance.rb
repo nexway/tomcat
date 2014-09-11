@@ -84,3 +84,6 @@ attribute :lib_dir,
   :kind_of => String
 attribute :endorsed_dir,
   :kind_of => String
+
+attribute :scheme,
+  :kind_of => String
