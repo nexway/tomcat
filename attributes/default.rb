@@ -53,6 +53,7 @@ default['tomcat']['access_log']['prefix'] = 'localhost_access_log.'
 default['tomcat']['access_log']['suffix'] = '.txt'
 default['tomcat']['access_log']['pattern'] = 'common'
 default['tomcat']['access_log']['resolve_hosts'] = 'false'
+default['tomcat']['service_start'] = false
 
 case node['platform']
 

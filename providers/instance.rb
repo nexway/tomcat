@@ -258,7 +258,11 @@ action :configure do
     else
       service_name "#{instance}"
     end
-    action [:start, :enable]
+    if node['tomcat']['service_start']
+      action [:start, :enable]
+    else
+      action :nothing
+    end
     notifies :run, "execute[wait for #{instance}]", :immediately
     retries 4
     retry_delay 30
